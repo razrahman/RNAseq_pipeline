@@ -43,7 +43,8 @@ In this step, 3 program runs
 Step 2:
 
 Go inside each project file repeatedly (e.g., RNA_seq Processing Main folder/Project1/ ) and run
-   "python {.../prepDE.py} " # mention where your prepDE.py file is (e.g. RNA_seq Processing Main folder/prepDE.py).
+
+"python {.../prepDE.py} " # mention where your prepDE.py file is (e.g. RNA_seq Processing Main folder/prepDE.py).
 
 prepDE.py file contains ways to extract gene_read_count and transcript_read_count
 
