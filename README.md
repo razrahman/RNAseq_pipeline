@@ -29,7 +29,7 @@ The steps of processing the data:
 Step 1:
 
 Run the following code in command line from your main directory which have your excel file containing SRR list (from Input 1)
-  "python3 RR_project_ALL.py -g {..gene annotation file (from Input 2) address...} -index {..hisat2 index folder (built in Input 3) address}"
+      "python3 RR_project_ALL.py -g {..gene annotation file (from Input 2) address...} -index {..hisat2 index folder (built in Input 3) address}"
 
 In this step, 3 program runs
 
@@ -41,19 +41,24 @@ In this step, 3 program runs
  
 
 Step 2:
+
 Go inside each project file repeatedly (e.g., RNA_seq Processing Main folder/Project1/ ) and run
- "python {.../prepDE.py} " # mention where your prepDE.py file is (e.g. RNA_seq Processing Main folder/prepDE.py).
+   "python {.../prepDE.py} " # mention where your prepDE.py file is (e.g. RNA_seq Processing Main folder/prepDE.py).
+
 prepDE.py file contains ways to extract gene_read_count and transcript_read_count
 
 Step 3:
+
 Run the following command again from your main directory
- "python3 Expression.py"
+   
+"python3 Expression.py"
+
 Expression.py file contains ways to extract FPKM and TPM data from the .tab file
 
 Your RNA-seq processing folder will ultimately look like this:
 
 RNA_seq Processing Main folder
-  RR_project_ALL.py
+	RR_project_ALL.py
   prepDE.py
   Expression.py
   SRR_list.xlsx
