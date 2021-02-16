@@ -27,12 +27,16 @@ Make sure your machines have following softwares installed.
 The steps of processing the data:
 
 Step 1:
+
 Run the following code in command line from your main directory which have your excel file containing SRR list (from Input 1)
   "python3 RR_project_ALL.py -g {..gene annotation file (from Input 2) address...} -index {..hisat2 index folder (built in Input 3) address}"
 
 In this step, 3 program runs
+
  A. HISAT2 downloads SRR files from SRA, do the "alignment of the reads to the genome" using hisat_indices and output sam file.
+ 
  B. samtools converts sam file to bam file
+ 
  C. StringTie takes the gene annotation file (.gtf) and bam file. It then assembles of the alignments into full-length transcripts and quantifies of the expression     levels of each gene and transcript. It produces mainly two file (I) a GTF file containing the assembled transcripts (e.g. in /RNA_seq Processing Main   folder/Project1/Ballgown/SRR_Sample1/SRR_Sample1.gtf) (II) Gene abundances in tab-delimited format (III) Ballgown/DEseq Input Table Files, which contains coverage    data for all transcripts.
  
 
