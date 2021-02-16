@@ -1,4 +1,6 @@
 #!/usr/bin/env python2
+# from "http://ccb.jhu.edu/software/stringtie/index.shtml?t=manual"
+
 import re, csv, sys, os, glob, warnings, itertools
 from math import ceil
 from optparse import OptionParser
